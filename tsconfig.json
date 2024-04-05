@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Version ECMAScript cible (peut être modifié selon vos besoins)
+    "downlevelIteration": true, // Active la prise en charge des itérations descendantes pour ES3/ES5
+    "lib": [ // Liste des bibliothèques de types incluses dans le projet
+      "dom", // Bibliothèque DOM
+      "dom.iterable", // Bibliothèque itérable DOM
+      "esnext" // Fonctionnalités de la spécification ECMAScript suivante
+    ],
+    "allowJs": true, // Autorise l'inclusion de fichiers JavaScript dans le projet
+    "skipLibCheck": true, // Ignore les vérifications de bibliothèques
+    "esModuleInterop": true, // Active l'interopérabilité des espaces de noms ES6
+    "allowSyntheticDefaultImports": true, // Autorise les importations synthétiques par défaut
+    "strict": true, // Active tous les contrôles stricts de TypeScript
+    "forceConsistentCasingInFileNames": true, // Assure la cohérence de la casse dans les noms de fichiers
+    "module": "commonjs", // Type de module à générer dans le code transpilé
+    "moduleResolution": "node", // Résolution de module basée sur Node.js
+    "resolveJsonModule": true, // Active la prise en charge des modules JSON
+    "isolatedModules": true, // Assure que chaque fichier peut être transpilé indépendamment
+    "noEmit": true, // Ne génère pas de fichiers de sortie pendant la compilation
+    "jsx": "react-jsx" // Type de syntaxe JSX à utiliser
+  },
+  "include": [ // Liste des chemins de fichiers et de répertoires à inclure dans la compilation
+    "src", // Répertoire source du projet
+    "src/App.tsx" // Chemin spécifique du fichier App.tsx à inclure
+  ]
+}

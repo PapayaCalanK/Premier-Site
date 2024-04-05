@@ -1,0 +1,28 @@
+# Voir https://help.github.com/articles/ignoring-files/ pour en savoir plus sur l'ignorance des fichiers.
+
+# dépendances
+/node_modules            # Ignorer le répertoire node_modules contenant les dépendances de Node.js
+/.pnp                    # Ignorer le répertoire .pnp (Plug'n'Play) utilisé par Yarn
+.pnp.js                  # Ignorer le fichier .pnp.js utilisé par Yarn
+
+# tests
+/coverage                # Ignorer le répertoire coverage contenant les résultats des tests
+
+# production
+/build                   # Ignorer le répertoire build contenant les fichiers de production générés
+
+# divers
+.DS_Store                # Ignorer les fichiers .DS_Store spécifiques à macOS
+.env.local               # Ignorer le fichier .env.local contenant les variables d'environnement locales
+.env.development.local   # Ignorer le fichier .env.development.local contenant les variables d'environnement de développement locales
+.env.test.local          # Ignorer le fichier .env.test.local contenant les variables d'environnement de test locales
+.env.production.local    # Ignorer le fichier .env.production.local contenant les variables d'environnement de production locales
+
+npm-debug.log*           # Ignorer les fichiers de log npm-debug.log
+yarn-debug.log*          # Ignorer les fichiers de log yarn-debug.log
+yarn-error.log*          # Ignorer les fichiers de log yarn-error.log
+
+# Ce fichier permet de maintenir un environnement de développement propre en excluant les fichiers et répertoires
+#  qui ne devraient pas être suivis par le système de gestion des versions Git. 
+#  Cela aide à éviter de commettre accidentellement des fichiers volumineux ou sensibles,
+#   ainsi que des fichiers générés ou spécifiques à l'environnement local.

@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "development" // Étend la configuration "development"
+  ],
+  "hints": {
+    "compat-api/html": [ // Règle spécifique pour la compatibilité HTML
+      "default", // Utilise la configuration par défaut pour cette règle
+      {
+        "ignore": [ // Liste des éléments HTML à ignorer
+          "meta[name=theme-color]" // Ignorer les balises <meta> avec l'attribut "name" égal à "theme-color"
+        ]
+      }
+    ]
+  }
+}

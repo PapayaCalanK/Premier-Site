@@ -1,0 +1,71 @@
+/* Consommation.css */
+.container-consommation {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles pour le bouton Liste des Cartouches */
+.btn-liste-cartouches {
+    background-color: #5cb85c;
+    /* Couleur de fond - ajustez selon votre palette */
+    color: white;
+    /* Couleur du texte */
+    padding: 10px 20px;
+    /* Espacement intérieur */
+    border: none;
+    /* Pas de bordure */
+    cursor: pointer;
+    /* Change le curseur en main */
+    transition: background-color 0.3s;
+    /* Animation de transition */
+}
+
+.btn-liste-cartouches:hover {
+    background-color: #4cae4c;
+    /* Couleur de fond au survol - ajustez selon votre palette */
+}
+
+.consommation-title {
+    font-weight: bold;
+    font-size: 50px;
+    background: linear-gradient(to right, rgb(200, 27, 180), rgb(13, 73, 104));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: animate__animated animate__zoomIn;
+}
+
+.input-style {
+    /* Styles appliqués aux éléments <input>, à copier ou à adapter pour <select> */
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    /* Ajoutez d'autres styles si nécessaire */
+}
+
+/* Ajoutez vos styles existants ici */
+
+.centered-paragraph {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    /* Autres styles de mise en forme si nécessaire */
+}
+
+.consommation-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    /* Autres styles de mise en forme */
+}
+
+.graph-container {
+    margin-top: 100px;
+    /* Ajustez selon le besoin pour descendre le graphique */
+}

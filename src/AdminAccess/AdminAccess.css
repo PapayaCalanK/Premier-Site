@@ -1,0 +1,38 @@
+/* Conteneur principal pour le formulaire d'accès administrateur. */
+.admin-access-form-container {
+    display: flex;
+    /* Utilise Flexbox pour un positionnement flexible. */
+    justify-content: center;
+    /* Centre horizontalement les éléments enfants dans le conteneur. */
+    align-items: center;
+    /* Centre verticalement les éléments enfants. */
+    height: 100vh;
+    /* Assure que le conteneur prend toute la hauteur de la fenêtre du navigateur. */
+}
+
+/* Style pour le formulaire d'accès administrateur. */
+.admin-access-form {
+    display: flex;
+    /* Applique Flexbox pour un alignement flexible. */
+    flex-direction: column;
+    /* Organise les éléments du formulaire en colonne. */
+    align-items: center;
+    /* Centre les éléments du formulaire horizontalement. */
+}
+
+/* Style pour chaque champ de saisie du formulaire. */
+.admin-access-form input {
+    margin-bottom: 10px;
+    /* Ajoute un espace sous chaque champ pour éviter le chevauchement. */
+}
+
+/* Style pour le bouton d'accès administrateur. */
+.admin-button {
+    position: absolute;
+    /* Positionne le bouton de manière absolue dans son conteneur relatif le plus proche. */
+    right: 0;
+    /* Aligner le bouton à l'extrême droite du conteneur. */
+}
+
+/* Ce code CSS structure un formulaire d'accès administrateur centré tant horizontalement que verticalement. 
+Il utilise Flexbox pour un alignement flexible des éléments du formulaire, et positionne un bouton d'accès administrateur à droite de l'écran. */

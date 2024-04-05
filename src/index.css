@@ -1,0 +1,20 @@
+/* Styles pour le corps de la page */
+body {
+  margin: 0;
+  /* Supprime les marges par défaut du corps de la page */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  /* Définit la famille de polices pour le texte du corps de la page */
+  -webkit-font-smoothing: antialiased;
+  /* Améliore l'apparence du texte pour les navigateurs WebKit */
+  -moz-osx-font-smoothing: grayscale;
+  /* Améliore l'apparence du texte pour les navigateurs Mozilla */
+}
+
+/* Styles pour les éléments <code> */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  /* Définit la famille de polices pour le texte dans les balises <code> */
+}

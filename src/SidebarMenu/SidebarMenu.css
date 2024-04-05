@@ -1,0 +1,95 @@
+/* Styles pour le conteneur principal du menu latéral */
+.sidebar-menu {
+    position: fixed;
+    /* Rend le menu latéral fixe à l'écran */
+    left: 0px;
+    /* Positionne le menu à l'extrême gauche */
+    top: 0px;
+    /* Positionne le menu en haut de la page */
+    width: 200px;
+    /* Définit une largeur fixe pour le menu */
+    height: 5%;
+    /* Définit la hauteur du menu comme un pourcentage de la hauteur de la fenêtre du navigateur */
+    background: #b033ac;
+    /* Couleur de fond du menu */
+    border-right: 0px solid #b033ac;
+    /* Bordure droite (actuellement non visible car sa largeur est 0) */
+    z-index: 1000;
+    /* Assure que le menu s'affiche au-dessus des autres éléments */
+    display: flex;
+    /* Utilise Flexbox pour le layout */
+    flex-direction: column;
+    /* Organise les enfants du menu verticalement */
+}
+
+/* Styles pour le titre du menu */
+.menu-title {
+    padding: 10px;
+    /* Ajoute de l'espace autour du texte */
+    font-size: 1.25rem;
+    /* Définit la taille de la police */
+    background-color: #f0e4f1;
+    /* Couleur de fond du titre */
+    border-bottom: 4px solid #b033ac;
+    /* Bordure inférieure pour séparer visuellement le titre du reste du menu */
+    cursor: pointer;
+    /* Change le curseur en pointer pour indiquer que le titre est cliquable */
+    text-align: left;
+    /* Alignement du texte à gauche */
+    transition: background-color 0.3s ease;
+    /* Transition douce pour le changement de couleur de fond lors du survol */
+}
+
+/* Changement de couleur de fond lors du survol du titre du menu */
+.menu-title:hover {
+    background-color: #9cc5d4;
+}
+
+/* Styles spécifiques pour le menu latéral dans SidebarMenu.css */
+.sidebar-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Assure une mise en page verticale */
+}
+
+.sidebar-menu-list li {
+    padding: 20px 0px;
+    /* Réinitialise les paddings par défaut */
+    border-bottom: 3px solid #a83ea5;
+    /* Bordure inférieure pour séparer visuellement les éléments de liste */
+    width: 100%;
+    /* Force les éléments de liste à prendre toute la largeur du menu */
+}
+
+/* Styles pour les liens a dans les éléments de liste */
+.sidebar-menu li a {
+    text-decoration: none;
+    /* Supprime le soulignement des liens */
+    color: #333;
+    /* Couleur du texte */
+    display: block;
+    /* Rend le lien block pour remplir l'espace de l'élément li */
+    padding: 5px 0px;
+    /* Ajoute de l'espace autour du texte du lien */
+    white-space: nowrap;
+    /* Empêche le texte de passer à la ligne */
+}
+
+/* Styles pour le survol des liens */
+.sidebar-menu li a:hover,
+.sidebar-menu li a:focus {
+    background-color: #c7d8de;
+    /* Changement de couleur de fond lors du survol */
+    outline: none;
+    /* Supprime l'outline qui pourrait apparaître lors du focus */
+    padding-left: 0px;
+    /* Ajuste le padding gauche pour le survol */
+}
+
+/* Ce CSS définit un menu latéral esthétique et fonctionnel, avec une attention particulière portée à l'interaction de l'utilisateur,
+ comme le changement de couleur lors du survol des titres et des liens.
+  L'utilisation de Flexbox pour le layout assure une structure flexible et réactive du menu. 
+  Les styles sont conçus pour être clairs et attractifs, améliorant l'expérience utilisateur globale. */

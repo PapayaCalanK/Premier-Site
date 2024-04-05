@@ -1,0 +1,19 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+Ce fichier robots.txt est une directive pour les robots d'exploration (crawlers)
+ qui indique quels répertoires de votre site ils sont autorisés à explorer. 
+ Dans ce cas, la directive User-agent: * s'applique à tous les robots, 
+ et la directive Disallow: indique qu'il n'y a pas de répertoires qui leur sont spécifiquement interdits.
+  Cela signifie que tous les robots sont autorisés à explorer tout le contenu de votre site.
+
+Si vous souhaitez restreindre l'accès à certains répertoires pour les robots, 
+vous pouvez spécifier ces restrictions en utilisant la directive Disallow. 
+Par exemple, si vous souhaitez interdire l'accès à tous les répertoires de votre site,
+ vous pouvez le faire en ajoutant Disallow: / après la directive User-agent: *.
+
+Si vous avez des exigences spécifiques concernant la façon 
+dont vous souhaitez que les robots d'exploration interagissent avec votre site, 
+vous pouvez consulter la documentation officielle sur robots.txt à l'adresse suivante : https://www.robotstxt.org/robotstxt.html.

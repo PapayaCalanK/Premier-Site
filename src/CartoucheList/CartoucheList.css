@@ -1,0 +1,321 @@
+/* Styles existants */
+body {
+  font-family: 'Arial', sans-serif;
+  /* Définit la police d'écriture pour tout le document */
+  background-color: #f4f4f4;
+  /* Couleur de fond pour tout le document */
+  margin: 0;
+  /* Annule les marges par défaut du navigateur */
+  padding: 0;
+  /* Annule les paddings par défaut du navigateur */
+}
+
+.container {
+  max-width: 800px;
+  /* Largeur maximale pour le conteneur central */
+  margin: 0 auto;
+  /* Centre le conteneur sur la page */
+  padding: 20px;
+  /* Padding intérieur pour le conteneur */
+}
+
+h1 {
+  color: #333;
+  /* Couleur du texte des titres h1 */
+}
+
+ul {
+  list-style: none;
+  /* Supprime les puces par défaut des listes */
+  padding: 0;
+  /* Annule le padding par défaut des listes */
+}
+
+li {
+  background-color: #fff;
+  /* Couleur de fond pour les éléments de liste */
+  border: 1px solid #ddd;
+  /* Bordure pour les éléments de liste */
+  margin-bottom: 10px;
+  /* Espace entre les éléments de liste */
+  padding: 15px;
+  /* Padding intérieur pour les éléments de liste */
+  position: relative;
+  /* Position relative pour les animations potentielles */
+}
+
+li img {
+  max-width: 100%;
+  /* Assure que les images ne dépassent pas leur conteneur */
+  height: auto;
+  /* Hauteur automatique pour conserver les proportions des images */
+}
+
+form {
+  background-color: #fff;
+  /* Couleur de fond pour les formulaires */
+  border: 1px solid #ddd;
+  /* Bordure pour les formulaires */
+  margin-bottom: 20px;
+  /* Espace en dessous des formulaires */
+  padding: 20px;
+  /* Padding intérieur pour les formulaires */
+}
+
+label {
+  display: block;
+  /* Affiche les labels en bloc pour une meilleure structuration */
+  margin-bottom: 10px;
+  /* Espace en dessous des labels */
+}
+
+input {
+  width: 100%;
+  /* Largeur complète pour les champs de saisie */
+  padding: 8px;
+  /* Padding intérieur pour les champs de saisie */
+  margin-bottom: 10px;
+  /* Espace en dessous des champs de saisie */
+}
+
+button {
+  background-color: #401edac2;
+  /* Couleur de fond pour les boutons */
+  color: white;
+  /* Couleur du texte pour les boutons */
+  padding: 10px 15px;
+  /* Padding intérieur pour les boutons */
+  border: none;
+  /* Supprime les bordures par défaut des boutons */
+  cursor: pointer;
+  /* Curseur en forme de pointeur au survol des boutons */
+}
+
+.cartouche-case {
+  padding: 10px;
+  /* Padding intérieur pour les cas des cartouches */
+  margin-bottom: 10px;
+  /* Espace en dessous des cas des cartouches */
+  border-radius: 5px;
+  /* Arrondit les coins des cas des cartouches */
+}
+
+/* Couleurs de fond spécifiques pour chaque type de cartouche */
+.cartouche-case.cyan {
+  background-color: #e0f7fa;
+}
+
+.cartouche-case.magenta {
+  background-color: #f3e5f5;
+}
+
+.cartouche-case.yellow {
+  background-color: #fff9c4;
+}
+
+.cartouche-case.black {
+  background-color: #cfd8dc;
+}
+
+/* Ajout des animations de néon */
+.neon-green {
+  animation: neonGreenEffect 1.5s ease-in-out infinite alternate;
+}
+
+.neon-red {
+  animation: neonRedEffect 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGreenEffect {
+  from {
+    /* Début de l'animation : lueur plus faible */
+    box-shadow: 0 0 10px #33ff33, 0 0 20px #33ff33, 0 0 30px #33ff33, 0 0 40px #33ff33;
+  }
+
+  to {
+    /* Fin de l'animation : lueur plus forte */
+    box-shadow: 0 0 20px #33ff33, 0 0 30px #33ff33, 0 0 40px #33ff33, 0 0 50px #33ff33;
+  }
+}
+
+@keyframes neonRedEffect {
+  from {
+    box-shadow: 0 0 10px #ff3333, 0 0 20px #ff3333, 0 0 30px #ff3333, 0 0 40px #ff3333;
+  }
+
+  to {
+    box-shadow: 0 0 20px #ff3333, 0 0 30px #ff3333, 0 0 40px #ff3333, 0 0 50px #ff3333;
+  }
+}
+
+button:hover {
+  /* Changement de la couleur de fond et de la couleur du texte */
+  background-color: #ddd2a2;
+  /* Une teinte de vert plus claire */
+  color: #7322a2;
+
+  /* Ajout d'une ombre pour donner un effet de "soulèvement" */
+  box-shadow: 0 8px 8px rgb(118, 25, 131);
+
+  /* Transition douce pour l'effet de survol */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Styles pour le bouton Stock Faible */
+.btn-success {
+  background-color: #5cb85c;
+  /* Couleur de fond initiale */
+  color: white;
+  /* Couleur du texte */
+  padding: 10px 20px;
+  /* Espacement intérieur */
+  border: none;
+  /* Pas de bordure */
+  cursor: pointer;
+  /* Change le curseur en main */
+  transition: background-color 0.3s;
+  /* Animation de transition */
+}
+
+.btn-success:hover {
+  background-color: #4cae4c;
+  /* Couleur de fond au survol */
+}
+
+/* Stylisation des listes pour afficher les cartouches */
+.cartouche-list ul {
+  list-style: none;
+  /* Supprime les marqueurs de liste par défaut */
+  padding: 0;
+  margin: 0;
+  /* Réinitialise les marges et les paddings */
+  display: flex;
+  /* Utilise Flexbox pour la disposition des éléments */
+  flex-wrap: wrap;
+  /* Permet aux éléments de liste de passer à la ligne suivante si nécessaire */
+}
+
+/* Stylisation des éléments de liste individuels */
+.cartouche-list li {
+  flex: 0 0 calc(25% - 20px);
+  /* Ajuste la largeur de l'élément pour qu'il prenne un quart de l'espace disponible, moins les marges */
+  max-width: calc(25% - 20px);
+  /* Limite la largeur maximale pour correspondre à la configuration flex */
+  box-sizing: border-box;
+  /* Assure que les paddings et les bordures sont inclus dans la largeur totale */
+  margin: 10px;
+  /* Définit une marge autour de chaque élément de liste */
+}
+
+/* src/components/CartoucheList/CartoucheList.css */
+
+/* Stylisation du formulaire pour ajouter une nouvelle cartouche */
+.add-cartouche-form {
+  background: linear-gradient(to bottom, #fff9c4, #e0f7fa, #f3e5f5, #cfd8dc);
+  /* Arrière-plan en dégradé pour le formulaire */
+  font-weight: bold;
+  /* Rend le texte en gras */
+  color: rgb(24, 23, 1);
+  /* Définit la couleur du texte */
+  padding: 10px;
+  /* Ajoute un padding intérieur */
+  display: flex;
+  flex-direction: column;
+  /* Organise les éléments du formulaire en colonne */
+  align-items: center;
+  /* Centre les éléments du formulaire */
+}
+
+/* Stylisation des lignes du formulaire */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permet aux éléments de la ligne de passer à la ligne suivante si nécessaire */
+  align-items: center;
+  justify-content: space-between;
+  /* Répartit l'espace entre les éléments de manière égale */
+  margin-bottom: 10px;
+  /* Ajoute une marge en dessous de chaque ligne */
+}
+
+/* Stylisation des groupes de formulaire */
+.form-group {
+  flex: 1 0 0%;
+  /* Ajuste la base de la flexibilité */
+  display: flex;
+  margin-right: 10px;
+  /* Ajoute une marge à droite de chaque groupe */
+  margin: 10px;
+  /* Ajoute une marge autour de chaque groupe */
+  box-sizing: border-box;
+  /* Inclut padding et border dans la largeur/hauteur */
+}
+
+/* Stylisation des labels dans les groupes de formulaire */
+.form-group label {
+  margin-right: 5px;
+  /* Ajoute une marge à droite du label */
+  white-space: nowrap;
+  /* Empêche le texte du label de passer à la ligne */
+}
+
+/* Ajustement des champs de saisie et des menus déroulants */
+.form-group input,
+.form-group select {
+  flex-grow: 1;
+  /* Permet aux champs de saisie de grandir pour remplir l'espace disponible */
+}
+
+/* Ajustements supplémentaires pour le formulaire */
+.add-cartouche-form .form-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Centre les éléments de la ligne */
+}
+
+.add-cartouche-form .form-group {
+  margin: 0px 100px;
+  /* Ajuste la marge pour les groupes de formulaire */
+}
+
+/* Stylisation pour un paragraphe centré */
+.centered-paragraph {
+  text-align: center;
+  /* Centre le texte */
+  margin: 10px;
+  padding: 10px;
+  /* Ajoute du padding */
+  /* Autres styles de mise en forme si nécessaire */
+}
+
+/* Conteneur principal pour la liste des cartouches */
+.cartouche-list-container {
+  display: flex;
+  flex-direction: column;
+  /* Organise le contenu en colonne */
+  min-height: 100vh;
+  /* Assure que le conteneur prend au moins toute la hauteur de la fenêtre */
+  align-items: center;
+  /* Centre les éléments */
+}
+
+/* Stylisation du contenu principal */
+.content {
+  width: 100%;
+  text-align: center;
+  /* Centre le texte */
+  /* Autres styles de mise en forme */
+}
+
+/* Ajoutez une classe spécifique pour les listes de ces pages */
+.page-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* ou "nowrap" si vous ne voulez pas que les éléments passent à la ligne */
+  justify-content: center;
+  /* Pour centrer les éléments horizontalement */
+  align-items: center;
+  /* Pour centrer les éléments verticalement */
+  /* Ajoutez d'autres propriétés selon vos besoins pour le style de ces listes */
+}

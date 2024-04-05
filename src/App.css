@@ -1,0 +1,198 @@
+/* Styles généraux de l'application, centrage du texte pour tous les éléments à l'intérieur de la classe .App. */
+.App {
+  text-align: center;
+}
+
+/* Style spécifique au logo de l'application, ajustant sa hauteur et désactivant les événements de pointeur (comme le clic). */
+.App-logo {
+  height: 40vmin;
+  /* Utilise vmin pour une hauteur responsive basée sur la dimension la plus petite de la fenêtre. */
+  pointer-events: none;
+  /* Empêche les interactions de l'utilisateur avec le logo. */
+}
+
+/* Définit une animation pour le logo qui tourne, seulement si l'utilisateur n'a pas exprimé de préférence pour réduire les mouvements. */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    /* Animation infinie qui tourne, complétant un tour en 20 secondes de manière linéaire. */
+  }
+}
+
+/* Styles pour l'en-tête de l'application, avec un fond sombre, un espacement flexible et du texte grand et blanc. */
+.App-header {
+  background-color: #282c34;
+  /* Couleur de fond sombre pour l'en-tête. */
+  min-height: 100vh;
+  /* Hauteur minimale pour couvrir toute la hauteur de la fenêtre. */
+  display: flex;
+  /* Utilise Flexbox pour la disposition des éléments. */
+  flex-direction: column;
+  /* Les éléments enfants s'alignent en colonne. */
+  align-items: center;
+  /* Centre les éléments enfants horizontalement. */
+  justify-content: center;
+  /* Centre les éléments enfants verticalement. */
+  font-size: calc(10px + 2vmin);
+  /* Taille de police responsive. */
+  color: white;
+  /* Couleur de texte. */
+}
+
+/* Styles pour les liens dans l'application, avec une couleur spécifique. */
+.App-link {
+  color: #61dafb;
+  /* Couleur des liens. */
+}
+
+/* Définition de l'animation pour la rotation du logo. */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+    /* Départ de l'animation : rotation à 0 degré. */
+  }
+
+  to {
+    transform: rotate(360deg);
+    /* Fin de l'animation : rotation complète à 360 degrés. */
+  }
+}
+
+/* Styles pour le titre de bienvenue. */
+.welcome-title {
+  font-family: 'Roboto', sans-serif;
+  /* Police de caractère et fallback. */
+  color: #732898;
+  /* Couleur du texte. */
+}
+
+/* Styles globaux du corps du document, définissant une image de fond. */
+body {
+  background-image: url('/public/images/blanc creme.png');
+  /* Chemin de l'image de fond. */
+  background-size: cover;
+  /* L'image couvre tout l'espace disponible. */
+  background-repeat: no-repeat;
+  /* L'image ne se répète pas. */
+  background-attachment: fixed;
+  /* L'image de fond reste fixe lors du défilement. */
+  background-position: center center;
+  /* L'image est centrée dans la fenêtre. */
+}
+
+
+/* Styles pour le bouton Stock Faible */
+.btn-success {
+  background-color: #5cb85c;
+  /* Vert lumineux comme couleur de fond. */
+  color: white;
+  /* Texte en blanc pour contraster avec le fond vert. */
+  padding: 10px 20px;
+  /* Espacement interne pour agrandir le bouton. */
+  border: none;
+  /* Aucune bordure pour un look plus moderne. */
+  cursor: pointer;
+  /* Change le curseur pour indiquer qu'il est cliquable. */
+  transition: background-color 0.3s;
+  /* Animation douce lors du survol. */
+}
+
+.btn-success:hover {
+  background-color: #4cae4c;
+  /* Vert légèrement plus foncé au survol. */
+}
+
+/* Styles pour le titre de bienvenue */
+.welcome-title {
+  font-weight: bold;
+  /* Texte en gras. */
+  font-size: 50px;
+  /* Taille de police grande pour mettre en évidence. */
+  background: linear-gradient(to right, rgb(200, 27, 180), rgb(13, 73, 104));
+  /* Dégradé de couleurs. */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Rend le texte transparent pour laisser voir le dégradé. */
+}
+
+/* Styles pour le bouton enfoncé */
+.btn-pressed {
+  background-color: #ee0f0f !important;
+  /* Rouge pour indiquer une action ou état actif. */
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  /* Effet de profondeur pour simuler le bouton enfoncé. */
+}
+
+/* Styles pour un bouton personnalisé de consommation */
+.btn-consommation {
+  background-color: #4caf50;
+  /* Vert pour le bouton. */
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  text-decoration: none;
+  /* Retire le soulignement des liens. */
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-consommation:hover {
+  background-color: #45a049;
+  /* Vert foncé au survol. */
+}
+
+/* Conteneur pour les boutons dans l'en-tête */
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  /* Centre les boutons horizontalement. */
+  gap: 20px;
+  /* Espacement entre les boutons. */
+}
+
+/* Styles pour le conteneur principal de la page de consommation */
+.consommation-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Prend la hauteur entière de la fenêtre. */
+}
+
+.consommation-content {
+  flex-grow: 1;
+  /* Permet au contenu de prendre tout l'espace disponible. */
+}
+
+/* Styles pour le footer de la page de consommation */
+.consommation-footer,
+.footer-rights {
+  text-align: center;
+  padding: 10px;
+  background: #f8f8f8;
+  /* Fond clair pour le footer. */
+}
+
+.footer-rights {
+  position: absolute;
+  bottom: 0;
+  /* Positionne le footer en bas de la page. */
+  width: 100%;
+  /* Largeur complète. */
+}
+
+/* Styles supplémentaires pour la mise en page */
+.content {
+  flex: 1;
+}
+
+.main-content {
+  margin-left: 200px;
+  /* Décale le contenu principal pour laisser de la place au menu latéral. */
+}
+
+/* Ces styles CSS permettent de créer une interface utilisateur attractive et réactive,
+ avec une attention particulière à la convivialité et à l'accessibilité. 
+ Les animations douces, les effets visuels tels que les ombres internes, 
+ et l'utilisation de dégradés contribuent à une expérience utilisateur améliorée. */

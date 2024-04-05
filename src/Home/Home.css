@@ -1,0 +1,49 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centre horizontalement */
+    justify-content: center;
+    /* Centre verticalement si nécessaire */
+    min-height: 100vh;
+    text-align: center;
+    /* Centre le texte dans chaque bloc */
+}
+
+.content {
+    width: 100%;
+    /* Utilise la pleine largeur */
+    max-width: 1200px;
+    /* Vous pouvez définir une largeur maximale si vous le souhaitez */
+    margin: 0 auto;
+    /* Centre le contenu avec une marge automatique */
+    padding: 20px;
+}
+
+/* Ajoutez vos styles existants ici */
+
+.history-section,
+.groupe-prenant-section {
+    text-align: justify;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fdfcfd;
+    /* Couleur de fond légère pour la section */
+    border-radius: 10px;
+    /* Coins arrondis pour la section */
+    box-shadow: 10px 15px 20px #b054ab;
+    /* Ombre légère pour donner un effet de profondeur */
+}
+
+.history-section p,
+.groupe-prenant-section p {
+    font-size: 16px;
+    /* Taille de police pour les paragraphes */
+    line-height: 1.5;
+    /* Espacement des lignes pour améliorer la lisibilité */
+    margin-bottom: 15px;
+    /* Espace entre les paragraphes */
+}
+
+/* Vous pouvez ajouter des styles supplémentaires pour personnaliser davantage ces sections */

@@ -1,0 +1,34 @@
+/* Imprimante.css */
+.imprimante-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centre horizontalement */
+    justify-content: center;
+    /* Centre verticalement si nécessaire */
+    min-height: 100vh;
+    text-align: center;
+    /* Centre le texte dans chaque bloc */
+}
+
+.content {
+    width: 100%;
+    /* Utilise la pleine largeur */
+    max-width: 1200px;
+    /* Vous pouvez définir une largeur maximale si vous le souhaitez */
+    margin: 0 auto;
+    /* Centre le contenu avec une marge automatique */
+    padding: 20px;
+}
+
+/* Ajoutez une classe spécifique pour les listes de ces pages */
+.page-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* ou "nowrap" si vous ne voulez pas que les éléments passent à la ligne */
+    justify-content: center;
+    /* Pour centrer les éléments horizontalement */
+    align-items: center;
+    /* Pour centrer les éléments verticalement */
+    /* Ajoutez d'autres propriétés selon vos besoins pour le style de ces listes */
+}

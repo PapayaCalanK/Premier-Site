@@ -1,0 +1,41 @@
+/* Styles appliqués à la classe .footer. Cette classe doit être utilisée sur l'élément que vous souhaitez styler comme le pied de page principal. */
+.footer {
+    text-align: center;
+    /* Centre le texte à l'intérieur du pied de page. */
+    padding: 20px;
+    /* Ajoute un padding (espace intérieur) de 20px autour du contenu du pied de page pour un meilleur espacement. */
+    background-color: #f0f0f0;
+    /* Définit la couleur de fond du pied de page à un gris clair. */
+    color: #333;
+    /* Définit la couleur du texte à un gris foncé pour un contraste suffisant avec le fond clair. */
+}
+
+/* Styles appliqués à tous les éléments <footer> de l'application. Si vous utilisez cet élément pour le pied de page, ces styles s'appliqueront. */
+footer {
+    font-weight: bold;
+    /* Rend le texte à l'intérieur du pied de page en gras. */
+    color: purple;
+    /* Change la couleur du texte à pourpre pour tous les éléments <footer>. */
+    /* background: linear-gradient(to bottom, #fff9c4, #e0f7fa, #f3e5f5, #cfd8dc); */
+    /* Crée un dégradé de couleurs comme fond, partant du haut (to bottom) avec une transition douce entre quatre couleurs spécifiques. */
+    text-align: center;
+    /* Centre le texte à l'intérieur de l'élément <footer>. */
+    padding: 10px;
+    /* Réduit le padding (espace intérieur) à 10px autour du contenu de l'élément <footer>. */
+}
+
+/* Styles appliqués à la classe .content. Cette classe peut être utilisée pour styler le contenu principal de votre page ou application. */
+.content {
+    flex: 1;
+    /* Attribue une flexibilité au contenu, lui permettant d'occuper tout l'espace disponible dans un conteneur flex, utile dans une mise en page flexbox pour un espacement et un dimensionnement flexible. */
+}
+
+
+/* Ces styles combinent des règles pour les éléments spécifiques à une classe (.footer et .content) et pour tous les éléments <footer> de votre application.
+ Assurez-vous d'appliquer ces classes et éléments dans le marquage HTML/JSX de votre composant pour que ces styles prennent effet. */
+
+/* Notez également que les styles de .footer et de l'élément footer peuvent se chevaucher ou entrer en conflit.
+  Le dernier déclaré dans le CSS (dans ce cas, l'élément footer) aura la priorité selon les règles de spécificité CSS, 
+  à moins que d'autres sélecteurs plus spécifiques ne soient utilisés.
+   Adaptez ces styles selon la structure et les besoins spécifiques de votre projet.
+ */

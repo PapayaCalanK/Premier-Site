@@ -1,0 +1,87 @@
+/* Compatibilite.css */
+.compatibilite-container {
+    /* Crée un conteneur qui centre son contenu verticalement et horizontalement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Assure que le conteneur prend au moins toute la hauteur de la fenêtre */
+    text-align: center;
+    /* Centre le texte à l'intérieur du conteneur */
+}
+
+.content {
+    width: 100%;
+    /* Prend toute la largeur disponible */
+    max-width: 1200px;
+    /* Largeur maximale du contenu pour ne pas étendre trop sur les grands écrans */
+    margin: 0 auto;
+    /* Centre le contenu horizontalement */
+    padding: 20px;
+    /* Ajoute de l'espace autour du contenu */
+}
+
+.compatibilite-section {
+    text-align: justify;
+    /* Justifie le texte pour un aspect soigné */
+    margin: 20px;
+    /* Ajoute de l'espace autour de la section */
+    padding: 10px;
+    /* Ajoute de l'espace à l'intérieur de la section */
+    background-color: #fdfcfd;
+    /* Couleur de fond */
+    border-radius: 10px;
+    /* Bordures arrondies */
+    box-shadow: 10px 15px 20px #b054ab;
+    /* Ombre portée pour un effet de profondeur */
+}
+
+.compatibilite-section p {
+    font-size: 16px;
+    /* Taille de la police */
+    line-height: 1.5;
+    /* Espacement entre les lignes pour améliorer la lisibilité */
+    margin-bottom: 15px;
+    /* Espacement après chaque paragraphe */
+}
+
+/* Style pour le container principal de la page */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Assure que le conteneur prend au moins toute la hauteur de la fenêtre */
+}
+
+/* Contenu principal de la page */
+.content {
+    flex: 1;
+    /* Le contenu s'étend pour occuper l'espace disponible, poussant ainsi le pied de page vers le bas */
+}
+
+/* Style pour le pied de page */
+.footer {
+    text-align: center;
+    /* Centre le texte du pied de page */
+    margin-top: auto;
+    /* Place automatiquement le pied de page en bas de la page */
+    padding: 20px 0;
+    /* Ajoute de l'espace au-dessus et en dessous du pied de page */
+    background-color: #f2f2f2;
+    /* Couleur de fond du pied de page */
+    color: #666;
+    /* Couleur du texte du pied de page */
+}
+
+/* Ajoutez une classe spécifique pour les listes de ces pages */
+.page-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* ou "nowrap" si vous ne voulez pas que les éléments passent à la ligne */
+    justify-content: center;
+    /* Pour centrer les éléments horizontalement */
+    align-items: center;
+    /* Pour centrer les éléments verticalement */
+    /* Ajoutez d'autres propriétés selon vos besoins pour le style de ces listes */
+}
